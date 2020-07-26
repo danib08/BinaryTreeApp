@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
@@ -19,7 +20,7 @@ namespace BinaryTreeApp
         private Button postorderBtn;
         private Button preorderBtn;
         private ListView orderListView;
-        private IList<int> orderList;
+        private List<int> orderList;
         private OrderAdapter _adapter;
         
         /// <summary>
@@ -41,21 +42,50 @@ namespace BinaryTreeApp
             inorderBtn = FindViewById<Button>(Resource.Id.button4);
             postorderBtn = FindViewById<Button>(Resource.Id.button5);
             orderListView = FindViewById<ListView>(Resource.Id.listview);
-            
+
+            orderList = new List<int>();
             _adapter = new OrderAdapter(this, orderList);
-            orderListView.Adapter = _adapter;
             
             addBtn.Click += (sender, args) =>
             {
                 if (numberEditText.Text.Equals(""))
                 {
-                    var text = "Please write your desired number";
+                    const string text = "Please write your desired number";
                     var toast = Toast.MakeText(this, text, ToastLength.Short);
+                    toast.Show();
                 }
                 else
                 {
                     tree.insert(int.Parse(numberEditText.Text));
+                    numberEditText.Text = "";
                 }
+            };
+            
+            preorderBtn.Click += (sender, args) =>
+            {
+                orderList = tree.printPreOrder();
+                Console.WriteLine("caca");
+                Console.WriteLine(orderList[0]);
+                _adapter.Items = orderList;
+                orderListView.Adapter = _adapter;
+            };
+            
+            inorderBtn.Click += (sender, args) =>
+            {
+                orderList = tree.printInOrder();
+                Console.WriteLine("culo");
+                Console.WriteLine(orderList[0]);
+                _adapter.Items = orderList;
+                orderListView.Adapter = _adapter;
+            };
+            
+            postorderBtn.Click += (sender, args) =>
+            {
+                Console.WriteLine("popo");
+                orderList = tree.printPostOrder();
+                Console.WriteLine(orderList[0]);
+                _adapter.Items = orderList;
+                orderListView.Adapter = _adapter;
             };
         }
     }

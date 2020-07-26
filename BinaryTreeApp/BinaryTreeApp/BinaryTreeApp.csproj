@@ -68,6 +68,7 @@
         <None Include="Assets\AboutAssets.txt" />
     </ItemGroup>
     <ItemGroup>
+        <AndroidResource Include="Resources\drawable\ButtonStyle.xml" />
         <AndroidResource Include="Resources\layout\ListViewRow.axml" />
         <AndroidResource Include="Resources\layout\Main.axml" />
         <AndroidResource Include="Resources\values\colors.xml" />

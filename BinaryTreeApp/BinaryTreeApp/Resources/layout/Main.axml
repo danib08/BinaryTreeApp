@@ -45,9 +45,9 @@
         <Button
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
+                android:background="@drawable/ButtonStyle"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#81A4CD"
                 android:textStyle="bold"
                 android:text="Add"
                 android:layout_width="0dp"
@@ -78,7 +78,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#81A4CD"
+                android:background="@drawable/ButtonStyle"
                 android:textStyle="bold"
                 android:text="Preorder"
                 android:layout_width="0dp"
@@ -90,7 +90,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#81A4CD"
+                android:background="@drawable/ButtonStyle"
                 android:textStyle="bold"
                 android:text="Inorder"
                 android:layout_width="0dp"
@@ -102,7 +102,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
-                android:background="#81A4CD"
+                android:background="@drawable/ButtonStyle"
                 android:textStyle="bold"
                 android:text="Postorder"
                 android:layout_width="0dp"
@@ -112,7 +112,7 @@
     </LinearLayout>
     <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="30"
             android:id="@+id/listview"/>
-
 </LinearLayout>

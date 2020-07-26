@@ -32,19 +32,19 @@ namespace BinaryTreeApp
         /// <returns> The current position</returns>
         public override long GetItemId(int position)
         {
-            throw new System.NotImplementedException();
+            return position;        
         }
 
         /// <summary>
         /// Gets the length of the list of items to be displayed
         /// </summary>
-        public override int Count { get; }
+        public override int Count => items.Count;
 
         /// <summary>
         /// This property returns the item in the list positioned at the entered index
         /// </summary>
         /// <param name="position"> The desired index </param>
-        public override int this[int position] => throw new System.NotImplementedException();
+        public override int this[int position] => items[position];
         
         /// <summary>
         /// This method is in charge of inflating the rows of the ListView 

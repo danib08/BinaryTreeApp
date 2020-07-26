@@ -9,7 +9,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#597A88"
+            android:textColor="#054A91"
             android:textStyle="bold"
             android:textSize="15sp" 
             android:paddingLeft="5dp" 
