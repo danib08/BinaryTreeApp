@@ -1,13 +1,7 @@
-bin/
-obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+# Created by https://www.toptal.com/developers/gitignore/api/intellij+all
+# Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all
 
-# Created by https://www.toptal.com/developers/gitignore/api/jetbrains+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=jetbrains+all
-
-### JetBrains+all ###
+### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
@@ -47,6 +41,17 @@ riderModule.iml
 # *.iml
 # *.ipr
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
 # CMake
 cmake-build-*/
 
@@ -58,7 +63,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
-
+target/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -80,7 +85,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-### JetBrains+all Patch ###
+### Intellij+all Patch ###
 # Ignores the whole .idea folder and all .iml files
 # See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
@@ -96,4 +101,7 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
-# End of https://www.toptal.com/developers/gitignore/api/jetbrains+all
+# End of https://www.toptal.com/developers/gitignore/api/intellij+all
+
+BinaryTreeApp/BinaryTreeApp/bin
+BinaryTreeApp/BinaryTreeApp/obj
