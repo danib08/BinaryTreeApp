@@ -49,6 +49,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="5dp"
                 android:textStyle="bold"
+                android:textColor="#054A91"
                 android:text="Add"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" 
@@ -80,6 +81,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ButtonStyle"
                 android:textStyle="bold"
+                android:textColor="#054A91"
                 android:text="Preorder"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -92,6 +94,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ButtonStyle"
                 android:textStyle="bold"
+                android:textColor="#054A91"
                 android:text="Inorder"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -104,6 +107,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/ButtonStyle"
                 android:textStyle="bold"
+                android:textColor="#054A91"
                 android:text="Postorder"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -113,6 +117,6 @@
     <ListView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="30"
+            android:layout_weight="50"
             android:id="@+id/listview"/>
 </LinearLayout>
