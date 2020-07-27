@@ -64,8 +64,6 @@ namespace BinaryTreeApp
             preorderBtn.Click += (sender, args) =>
             {
                 orderList = tree.printPreOrder();
-                Console.WriteLine("caca");
-                Console.WriteLine(orderList[0]);
                 _adapter.Items = orderList;
                 orderListView.Adapter = _adapter;
             };
@@ -73,17 +71,13 @@ namespace BinaryTreeApp
             inorderBtn.Click += (sender, args) =>
             {
                 orderList = tree.printInOrder();
-                Console.WriteLine("culo");
-                Console.WriteLine(orderList[0]);
                 _adapter.Items = orderList;
                 orderListView.Adapter = _adapter;
             };
             
             postorderBtn.Click += (sender, args) =>
             {
-                Console.WriteLine("popo");
                 orderList = tree.printPostOrder();
-                Console.WriteLine(orderList[0]);
                 _adapter.Items = orderList;
                 orderListView.Adapter = _adapter;
             };

@@ -6,11 +6,11 @@ namespace BinaryTreeApp
     {
         private BSTNode Root { get; set; }
 
-        private List<int> PreOrderList { get; } = new List<int>();
+        private List<int> preOrderList = new List<int>();
 
-        private List<int> InOrderList { get; } = new List<int>();
+        private List<int> inOrderList  = new List<int>();
 
-        private List<int> PostOrderList { get; } = new List<int>();
+        private List<int> postOrderList = new List<int>();
 
         public void insert(int element)
         {
@@ -41,44 +41,47 @@ namespace BinaryTreeApp
 
         public List<int> printPreOrder()
         {
+            preOrderList.Clear();
             return printPreOrder(Root);
         }
 
         private List<int> printPreOrder(BSTNode current)
         {
-            if (current == null) return PreOrderList;
-            PreOrderList.Add(current.Element);
+            if (current == null) return preOrderList;
+            preOrderList.Add(current.Element);
             printPreOrder(current.Left);
             printPreOrder(current.Right);
-            return PreOrderList;
+            return preOrderList;
         }
 
         public List<int> printInOrder()
         {
+            inOrderList.Clear();
             return printInOrder(Root);
         }
 
         private List<int> printInOrder(BSTNode current)
         {
-            if (current == null) return InOrderList;
+            if (current == null) return inOrderList;
             printInOrder(current.Left);
-            InOrderList.Add(current.Element);
+            inOrderList.Add(current.Element);
             printInOrder(current.Right);
-            return InOrderList;
+            return inOrderList;
         }
 
         public List<int> printPostOrder()
         {
+            postOrderList.Clear();
             return printPostOrder(Root);
         }
 
         private List<int> printPostOrder(BSTNode current)
         {
-            if (current == null) return PostOrderList;
+            if (current == null) return postOrderList;
             printPostOrder(current.Left);
             printPostOrder(current.Right);
-            PostOrderList.Add(current.Element);
-            return PostOrderList;
+            postOrderList.Add(current.Element);
+            return postOrderList;
         }
     }
 }

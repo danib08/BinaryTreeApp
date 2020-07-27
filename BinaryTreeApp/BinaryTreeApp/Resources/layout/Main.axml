@@ -7,7 +7,7 @@
         android:weightSum="100"
         >
     <TextView
-            android:text="Cook Time"
+            android:text="Binary Tree App"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="0dp"
